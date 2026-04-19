@@ -77,9 +77,38 @@ Domain Name System (query)
 ```
 ## 8.Zapytanie HTTP do serwera http://mm.kosmatka.pl/ oraz odpowiedź (tylko nagłówki) w formacie ASCII:
 ```
+GET /success.txt?ipv4 HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+Priority: u=4
+Pragma: no-cache
+Cache-Control: no-cache
+
+HTTP/1.1 200 OK
+Server: nginx
+Content-Length: 8
+Via: 1.1 google
+Date: Sat, 18 Apr 2026 20:15:36 GMT
+Age: 83552
+Content-Type: text/plain
+Cache-Control: public,must-revalidate,max-age=0,s-maxage=3600
 ```
 ## 9. Sposób zapisu obrazka http://mm.kosmatka.pl/favicon.png z Wireshark oraz jego treść w formacie base64:
 ```
+iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBI
+WXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wQGABsCuG9X8AAAAB1pVFh0Q29tbWVudAAAAAAAQ3Jl
+YXRlZCB3aXRoIEdJTVBkLmUHAAABgElEQVQ4y52Tv0tCURTHP6+ePWxJigThCUKEgzk01BgPEpxs
+aqhNWmwJHtRa+AdkODVJ+QdIBM3im5RqEXTRkJbgLZZDEDwSb8N7/nwS1oHLvdxz7+d77jn3ACiA
+6sz/srXUybm4vjNFr9cTM1mpJEShIADmAOXdbNLtfmPUZpQ0DGi36QOQpB67kU+MOmMQo4Ybahjg
+80EqBYA86ksfwtktPL3A9joUyvZ+9RX0PedQowHB4OCOPBld5gjMD7i8B/8S7EQm1MNh0LTB1ty0
+JwaWbdDFAWhRMOo2lHzedVaemqC+OUrahh1RJhQaU3dHMHoZIJ22AVFIeKokrWOX3hBQLEK1aiv0
+h88H2awN+XokGfe4qjIECAG6Pu7VdfB6wTShUkHTVlylHgJisemfptmEchmSSQBScXh4/i2Jrrpm
+7AgCgUGFEltwejMCsCyLVquFEAJJkqaDOp3B0j8P+5uLXIEiA5aiKORyORRl9oZUVRVgVXLaOAgs
+/LGLLeDtB4jwnjHllMVCAAAAAElFTkSuQmCC    
 ```
 Aby sprawdzić, czy obrazek jest poprawny, wklej go do adresu w przeglądarce (Firefox), doklejając na początku: data:image/png;base64,
 
