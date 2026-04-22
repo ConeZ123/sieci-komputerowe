@@ -21,10 +21,15 @@ eth0     UP
 
 ```
 ip route | grep default
+arp -n 192.168.64.1
 ```
 
 ```
 default via 192.168.64.1 dev eth0 proto dhcp src 192.168.64.6 metric 100
+
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.64.1             ether   a2:9a:8e:68:f6:64   C                     eth0
+
 ```
 
 ## 3. Zmiana adresu MAC karty sieciowej Ethernet na inną wartość.
