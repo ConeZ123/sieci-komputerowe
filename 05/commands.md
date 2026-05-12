@@ -32,7 +32,7 @@ Address                  HWtype  HWaddress           Flags Mask            Iface
 
 ```
 
-## 3. Zmiana adresu MAC karty sieciowej Ethernet na inną wartość.
+##  3. Zmiana adresu MAC karty sieciowej Ethernet na inną wartość.
 
 ```
 sudo ip link set dev eth0 down
